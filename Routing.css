@@ -1,0 +1,141 @@
+* {
+    box-sizing: border-box;
+    color: rgb(41, 41, 41);
+}
+
+html, body {
+    font-family: Arial, Helvetica, sans-serif;
+    padding: 0;
+    margin: 1rem 10%;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    color: #000;
+}
+
+a {
+    text-decoration: none;
+    color: darkblue;
+    padding: 0.5rem 0.75rem;
+    border-radius: 0.5rem;
+    text-transform: uppercase;
+}
+
+a:hover {
+    text-decoration: underline 1px solid darkblue;
+}
+
+a:link {
+    color: red;
+}
+
+#nav {
+    display: flex;
+    justify-content: space-between;
+    margin: 1rem;
+}
+
+#footer > footer {
+    text-align: center;
+    margin: 1rem;
+}
+
+#logo {
+    color: deeppink;
+    background-color: darkslategrey;
+    padding: 0.3rem;
+    border-radius: 50%;
+}
+
+.container {
+    display: flex;
+    flex-flow: row wrap;
+    text-align: center;
+    padding: 1rem;
+}
+
+.container > h1 {
+    flex: 100%;
+}
+
+hr {
+    flex: 100%;
+}
+
+.content {
+    display: flex;
+    flex-flow: row nowrap;
+    padding: 1rem;
+}
+
+.blog {
+    display: flex;
+    flex-flow: row nowrap;
+    text-align: left;
+    padding: 0.5rem;
+}
+
+.blog > img {
+    margin-right: 0.7rem;
+}
+
+.blog_cim > h3 {
+    text-decoration: underline 1px solid rgb(41, 41, 41);
+}
+
+.portfolio {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-evenly;
+    padding: 0.5rem;
+}
+
+.portfolio > img {
+    margin: 1rem 1.5rem;
+    width: 250px;
+    height: 200px;
+}
+
+.home {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-evenly;
+    padding: 0.5rem;
+}
+
+.home > img {
+    margin: 1rem 1.5rem;
+    width: 250px;
+    height: 200px;
+}
+
+#kapcsolat {
+    display: flex;
+    flex-flow: column wrap;
+    width: 100%;
+    align-items: center;
+}
+
+#kapcsolat > div {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    margin: 0.3rem 0.8rem;
+}
+
+#kapcsolat > div > label {
+    justify-self: flex-end;
+    margin: 0.3rem 0.5rem;
+}
+
+#kapcsolat > div > input {
+    justify-self: flex-start;
+}
+
+#kapcsolat > div > input, #kapcsolat > div > textarea {
+    width: 15rem;
+}
+
+#kapcsolat > div > #sub_btn {
+    width: 5rem;
+    justify-self: end;
+}
